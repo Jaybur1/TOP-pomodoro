@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Pomodoro</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css" type="text/css">
     <link rel="stylesheet" href="./index.css" type="text/css">
 </head>
@@ -11,9 +14,40 @@
 <body>
     <div class="container">
         <header class="header">Pomodoro Clock</header>
-
+        <div class="option-container">
+            <div class="session-option">
+                <button class="option-btn" id="add-session"><i class="fas fa-plus"></i></button>
+                <span class="option" id="session"></span>
+                <button class="option-btn" id="reduce-session"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="break-option">
+                <button class="option-btn" id="add-break"><i class="fas fa-plus"></i></button>
+                <span class="option" id="break"></span>
+                <button class="option-btn" id="reduce-break"><i class="fas fa-minus"></i></button>
+            </div>
+            <span class="labels" id="session-label">Session</span>
+            <span class="labels" id="break-label">Break</span>
+        </div>
+        <div class="timer-container">
+            <div class="timer-action-left">
+                <button class="option-btn" id="start"><i class="fas fa-play"></i></button>
+                <button class="option-btn" id="pause"><i class="fas fa-pause"></i></button>
+            </div>
+            <span class="timer-text"></span>
+            <span id="timer-counter"></span>
+            <div class="timer-action-right">
+                <button class="option-btn" id="stop"><i class="fas fa-stop"></i></button>
+                <button class="option-btn" id="restart"><i class="fas fa-sync-alt"></i></button>
+            </div>
+        </div>
+        <div class="action-container">
+            <span class="action-text">Session Time</span>
+            <button class="action-btn" id="session-btn">Session</button>
+            <button class="action-btn" id="break-btn">Break</button>
+        </div>
+        <footer>Coded by Jaybur&copy;2019</footer>
     </div>
-    <footer>Coded by Jaybur&copy;</footer>
+    <img class="watch" src="image/Timer-watch.png" alt="watch">
     <script src="index.js"></script>
 </body>
 
